@@ -61,6 +61,40 @@
         <!-- left -->
         <div class="left-side">
             <div class="heading1">
+                <div class="sidebar">
+                    <h3>Filter By</h3>
+
+                    <div class="filter-section">
+                        <h4 style="font-size: 16px;">Sizes</h4>
+                        <label><input type="checkbox" value="Small"> Small</label>
+                        <label><input type="checkbox" value="Medium"> Medium</label>
+                        <label><input type="checkbox" value="Large"> Large</label>
+                        <label><input type="checkbox" value="X-Large"> X-Large</label>
+                        <label><input type="checkbox" value="2x-Large"> X-Large</label>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4 style="font-size: 16px;">Collections</h4>
+                        <label><input type="checkbox" value="Shirt"> Kurtas</label>
+                        <!-- <label><input type="checkbox" value="Kurtas"> Pants</label> -->
+                        <label><input type="checkbox" value="Shoes"> Long Kurtas</label>
+                        <label><input type="checkbox" value="Accessories"> Mid Kurtas</label>
+                        <label><input type="checkbox" value="jackets"> Printed Kurtas</label>
+
+                    </div>
+
+                    <div class="filter-section">
+                        <h4 style="font-size: 16px;">Price Range</h4>
+                        <div class="price-range">
+                            <span>0</span>
+                            <input type="range" id="price-range" min="0" max="50000" step="100" value="25000" oninput="updatePriceDisplay()">
+                            <span>50000</span>
+                        </div>
+                        <p>Price: <span id="price-display">25000</span></p>
+                    </div>
+
+                    <button onclick="applyFilters()" class="applly">Apply Filters</button>
+                </div>
             </div>
         </div>
 
